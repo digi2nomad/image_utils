@@ -5,18 +5,17 @@ from PIL import Image, ImageDraw, ImageFont
 
 TEMPLATE = "image/thumbnail-template.png"
 FONTFILE = "font/Rockstar-ExtraBold.otf"
-FONTSIZE = 175
-OUTPUT = "image/thumbnail.png"
+OUTPUT = "image/thumbnail-english.png"
 START_OFFSET_TEXT = (850, 125)
 TEXTCOLOR = (255, 0, 0, 255)
 LINE_SPACING = 140
 SEPARATOR = "|"
 
 def create_thumbnail(text,
+                     font_size,
                      template=TEMPLATE,
                      output=OUTPUT,
                      fontfile=FONTFILE,
-                     font_size=FONTSIZE,
                      text_color=TEXTCOLOR,
                      start_offset=START_OFFSET_TEXT,
                      line_spacing=LINE_SPACING):
@@ -46,7 +45,7 @@ def create_thumbnail(text,
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print(f"Usage: {sys.argv[0]} 'text on banner'")
+    if len(sys.argv) != 3:
+        print(f"Usage: {sys.argv[0]} 'title text seperated with bars' 'text font size(e.g.: 165)'")
         sys.exit(1)
-    create_thumbnail(sys.argv[1])
+    create_thumbnail(sys.argv[1], int(sys.argv[2]))
