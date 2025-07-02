@@ -40,8 +40,13 @@ def create_thumbnail(text,
               font=ImageFont.truetype("font/HanyiSentyPagodaRegular.ttf", 120), fill="yellow") 
     draw.text((100,300), "新闻焦点",  
               font=ImageFont.truetype("font/HanyiSentyPagodaRegular.ttf", 120), fill="yellow") 
-    draw.text((30,600), "Sampan Podcast",  
+    draw.text((30,550), "Sampan Podcast",  
               font=ImageFont.truetype("font/Bohme-Rounded.ttf", 65), fill="white") 
+
+    draw.line((   0,   0,   0, 765), fill="yellow", width=10);
+    draw.line((   0,   0,1410,   0), fill="yellow", width=10);
+    draw.line((   0, 765,1410, 765), fill="yellow", width=10);
+    draw.line((1410, 765,1410,   0), fill="yellow", width=20);
 
     out = Image.alpha_composite(base, image)
 
