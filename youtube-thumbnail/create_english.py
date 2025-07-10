@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 TEMPLATE = "image/thumbnail-template.png"
 FONTFILE = "font/Rockstar-ExtraBold.otf"
 OUTPUT = "image/thumbnail-english.png"
-START_OFFSET_TEXT = (850, 125)
+START_OFFSET_TEXT = (850, 105)
 TEXTCOLOR = (255, 0, 0, 255)
 LINE_SPACING = 140
 SEPARATOR = "|"
