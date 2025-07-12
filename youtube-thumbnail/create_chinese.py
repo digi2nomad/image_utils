@@ -12,7 +12,7 @@ FONTFILE = "font/HanyiSentyPagodaRegular.ttf"
 #FONTFILE = "font/HanyiSentyGraffiti.ttf"
 #FONTFILE = "font/GongfanmianfeitiRegular.ttf"
 OUTPUT = "image/thumbnail-chinese.png"
-START_OFFSET_TEXT = (850, 125)
+START_OFFSET_TEXT = (850, 105)
 TEXTCOLOR = (255, 0, 0, 255)
 LINE_SPACING = 140
 SEPARATOR = "|"
@@ -36,7 +36,7 @@ def create_thumbnail(text,
         top += i * line_spacing
         new_offset = (left, top)
         draw.text(new_offset, line, font=font, fill=text_color)
-    draw.text((100,150), "亚太每日",  
+    draw.text((100,150), "亚太深入",  
               font=ImageFont.truetype("font/HanyiSentyPagodaRegular.ttf", 120), fill="yellow") 
     draw.text((100,300), "新闻焦点",  
               font=ImageFont.truetype("font/HanyiSentyPagodaRegular.ttf", 120), fill="yellow") 

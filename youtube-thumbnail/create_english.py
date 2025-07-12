@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 TEMPLATE = "image/thumbnail-template.png"
 FONTFILE = "font/Rockstar-ExtraBold.otf"
 OUTPUT = "image/thumbnail-english.png"
-START_OFFSET_TEXT = (850, 105)
+START_OFFSET_TEXT = (800, 105)
 TEXTCOLOR = (255, 0, 0, 255)
 LINE_SPACING = 140
 SEPARATOR = "|"
@@ -34,7 +34,7 @@ def create_thumbnail(text,
               font=ImageFont.truetype("font/Gendy.otf", 100), fill="yellow") 
     draw.text((100,300), "News",  
               font=ImageFont.truetype("font/Gendy.otf", 100), fill="yellow") 
-    draw.text((100,400), "Daily Update",  
+    draw.text((100,400), "Deep Dive",  
               font=ImageFont.truetype("font/Gendy.otf", 100), fill="yellow") 
     draw.text((30,550), "Sampan Podcast",  
               font=ImageFont.truetype("font/Bohme-Rounded.ttf", 65), fill="white") 
