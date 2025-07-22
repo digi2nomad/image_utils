@@ -36,9 +36,9 @@ def create_thumbnail(text,
         top += i * line_spacing
         new_offset = (left, top)
         draw.text(new_offset, line, font=font, fill=text_color)
-    draw.text((100,150), "亚太深入",  
+    draw.text((100,150), "  亚太",  
               font=ImageFont.truetype("font/HanyiSentyPagodaRegular.ttf", 120), fill="yellow") 
-    draw.text((100,300), "新闻焦点",  
+    draw.text((100,300), "深入焦点",  
               font=ImageFont.truetype("font/HanyiSentyPagodaRegular.ttf", 120), fill="yellow") 
     draw.text((30,550), "Sampan Podcast",  
               font=ImageFont.truetype("font/Bohme-Rounded.ttf", 65), fill="white") 

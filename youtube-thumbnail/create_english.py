@@ -32,8 +32,8 @@ def create_thumbnail(text,
         draw.text(new_offset, line, font=font, fill=text_color)
     draw.text((100,200), "Asia Pacific",  
               font=ImageFont.truetype("font/Gendy.otf", 100), fill="yellow") 
-    draw.text((100,300), "News",  
-              font=ImageFont.truetype("font/Gendy.otf", 100), fill="yellow") 
+    #draw.text((100,300), "News",  
+    #          font=ImageFont.truetype("font/Gendy.otf", 100), fill="yellow") 
     draw.text((100,400), "Deep Dive",  
               font=ImageFont.truetype("font/Gendy.otf", 100), fill="yellow") 
     draw.text((30,550), "Sampan Podcast",  
