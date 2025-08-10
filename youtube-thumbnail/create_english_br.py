@@ -3,8 +3,8 @@ import sys
 
 from PIL import Image, ImageDraw, ImageFont
 
-TEMPLATE = "image/Wang_gungwu.png"
-OUTPUT = "image/thumbnail-english.png"
+TEMPLATE = "image/Patrick_McGee.jpg"
+OUTPUT = "image/book-review-english.png"
 
 def create_thumbnail(
                      template=TEMPLATE,
@@ -14,18 +14,20 @@ def create_thumbnail(
     image = Image.new('RGBA', base.size)
     draw = ImageDraw.Draw(image)
 
-    draw.text((750,10), "Book Review:",  
-              font=ImageFont.truetype("font/Gendy.otf", 65), fill="yellow") 
-    draw.text((1150,25), "Ep0",  
-              font=ImageFont.truetype("font/Gendy.otf", 45), fill="white") 
-    draw.text((850,90), "Prof. Wang Gungwu &",  
-              font=ImageFont.truetype("font/Gendy.otf", 65), fill="yellow") 
-    draw.text((950,170), "The experience of",  
-              font=ImageFont.truetype("font/Gendy.otf", 65), fill="yellow") 
-    draw.text((1050,250), "Chinese diaspora",  
-              font=ImageFont.truetype("font/Gendy.otf", 65), fill="yellow") 
-    draw.text((30, 800), "Sampan Review",  
+    draw.text((250, 15), "Sampan Review",  
               font=ImageFont.truetype("font/Bohme-Rounded.ttf", 75), fill="white") 
+    draw.text((1035,100), "Apple's",  
+              font=ImageFont.truetype("font/Gendy.otf", 65), fill="yellow") 
+    draw.text((1035,180), "modern",  
+              font=ImageFont.truetype("font/Gendy.otf", 65), fill="yellow") 
+    draw.text((1035,260), "day",  
+              font=ImageFont.truetype("font/Gendy.otf", 65), fill="yellow") 
+    draw.text((1035,340), "Marshall",  
+              font=ImageFont.truetype("font/Gendy.otf", 65), fill="yellow") 
+    draw.text((1035,420), "plan",  
+              font=ImageFont.truetype("font/Gendy.otf", 65), fill="yellow") 
+    draw.text((1035,500), "in China",  
+              font=ImageFont.truetype("font/Gendy.otf", 65), fill="yellow") 
 
     out = Image.alpha_composite(base, image)
 
